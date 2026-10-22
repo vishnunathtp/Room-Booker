@@ -1,0 +1,408 @@
+/* ==============================
+   GENERAL
+============================== */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f2f4f7;
+  color: #222;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  padding: 30px 0;
+}
+
+
+/* ==============================
+   HEADER
+============================== */
+
+.header {
+  background-color: #007bff;
+  color: white;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 32px;
+}
+
+.header p {
+  margin-bottom: 0;
+  font-size: 16px;
+}
+
+
+/* ==============================
+   ROLE BOX
+============================== */
+
+.role-box {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.role-box h2 {
+  margin-top: 0;
+}
+
+.role-buttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.active-role {
+  background-color: #0056b3;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.2);
+}
+
+
+/* ==============================
+   SECTION
+============================== */
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.section-header h2 {
+  margin: 0;
+}
+
+
+/* ==============================
+   ROOM LIST
+============================== */
+
+.room-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+
+/* ==============================
+   ROOM CARD
+============================== */
+
+.room-card {
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.room-card h3 {
+  margin-top: 0;
+  color: #007bff;
+}
+
+.room-card p {
+  margin: 10px 0;
+}
+
+
+/* ==============================
+   BUTTONS
+============================== */
+
+button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.view-button {
+  background-color: #28a745;
+}
+
+.view-button:hover {
+  background-color: #1e7e34;
+}
+
+
+/* ==============================
+   BOOKING FORM
+============================== */
+
+.form-box {
+  background-color: white;
+  margin-top: 30px;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-box h2 {
+  margin-top: 0;
+  color: #007bff;
+}
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 11px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+textarea {
+  height: 90px;
+  resize: vertical;
+}
+
+
+/* ==============================
+   FORM BUTTONS
+============================== */
+
+.form-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.cancel-form-button {
+  background-color: #6c757d;
+}
+
+.cancel-form-button:hover {
+  background-color: #545b62;
+}
+
+
+/* ==============================
+   BOOKINGS
+============================== */
+
+.bookings-section {
+  margin-top: 35px;
+}
+
+.booking-box {
+  background-color: white;
+  margin-top: 15px;
+  padding: 20px;
+  border-radius: 10px;
+  border-left: 6px solid #007bff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.booking-box h3 {
+  margin-top: 0;
+}
+
+.booking-box p {
+  margin: 8px 0;
+}
+
+
+/* ==============================
+   BOOKING STATUS
+============================== */
+
+.status {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+
+/* Pending */
+
+.status.pending {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+
+/* Confirmed */
+
+.status.confirmed {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+
+/* Rejected */
+
+.status.rejected {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+
+/* Cancelled */
+
+.status.cancelled {
+  background-color: #e2e3e5;
+  color: #383d41;
+}
+
+
+/* ==============================
+   BOOKING BOX STATUS COLORS
+============================== */
+
+/* Pending booking */
+
+.booking-box.pending {
+  border-left-color: #ffc107;
+}
+
+
+/* Confirmed booking */
+
+.booking-box.confirmed {
+  border-left-color: #28a745;
+}
+
+
+/* Rejected booking */
+
+.booking-box.rejected {
+  border-left-color: #dc3545;
+}
+
+
+/* Cancelled booking */
+
+.booking-box.cancelled {
+  border-left-color: #6c757d;
+}
+
+
+/* ==============================
+   CONFIRM BUTTON
+============================== */
+
+.confirm-button {
+  background-color: #28a745;
+}
+
+.confirm-button:hover {
+  background-color: #1e7e34;
+}
+
+
+/* ==============================
+   CANCEL / REJECT BUTTON
+============================== */
+
+.cancel-button {
+  background-color: #dc3545;
+}
+
+.cancel-button:hover {
+  background-color: #a71d2a;
+}
+
+
+/* ==============================
+   CLOSE BUTTON
+============================== */
+
+.close-button {
+  background-color: #6c757d;
+}
+
+.close-button:hover {
+  background-color: #545b62;
+}
+
+
+/* ==============================
+   MESSAGE
+============================== */
+
+.message-box {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+/* ==============================
+   MOBILE
+============================== */
+
+@media (max-width: 600px) {
+
+  .container {
+    width: 94%;
+  }
+
+  .room-list {
+    grid-template-columns: 1fr;
+  }
+
+  .section-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .header h1 {
+    font-size: 25px;
+  }
+
+  .role-buttons {
+    flex-direction: column;
+  }
+
+  .role-buttons button {
+    width: 100%;
+  }
+
+  .form-buttons {
+    flex-direction: column;
+  }
+
+  .form-buttons button {
+    width: 100%;
+  }
+
+}
